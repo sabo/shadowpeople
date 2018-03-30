@@ -64,7 +64,7 @@ let hsvVec = new cv.MatVector();
 hsvVec.push_back(hsv);
 let flp = new cv.Mat();
 let fgmask = new cv.Mat(video.height, video.width, cv.CV_8UC1);
-let fgbg = new cv.BackgroundSubtractorMOG2(250, 32, false);
+let fgbg = new cv.BackgroundSubtractorMOG2(5000, 512, false);
 
 const FPS = 30;
 function processVideo() {
